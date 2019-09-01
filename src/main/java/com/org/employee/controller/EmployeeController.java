@@ -17,7 +17,6 @@ public class EmployeeController {
 	public EmployeeDetailsResponse addNewBankBranch(@Valid @RequestBody EmployeeDetailsRequest resRequest) {
 		EmployeeDetailsResponse response = new EmployeeDetailsResponse();
 		try {
-			System.out.println("test");
 			String employeeName = resRequest.getFirstName().concat(" ").concat(resRequest.getLastName());
 			return EmployeeDetailsResponse.builder().employeeName(employeeName)
 					.employeeId(new Random().nextInt((100 - 1) + 1) + 1).status("Success").build();
