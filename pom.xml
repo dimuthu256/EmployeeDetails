@@ -45,6 +45,11 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
+		<dependency>
+		    <groupId>com.inova</groupId>
+			<artifactId>applogger</artifactId>
+			<version>1.0</version>
+		</dependency>
 
 		<!-- configured swagger-ui -->
 		<dependency>
